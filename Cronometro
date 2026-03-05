@@ -17,7 +17,7 @@ namespace Cronometro
             Console.WriteLine("m = minutos");
             Console.WriteLine("0 = sair");
             Console.WriteLine("");
-            string dado = Console.ReadLine().ToLower();
+            string dado = Console.ReadLine()!.ToLower();
             char tipo = char.Parse(dado.Substring(dado.Length-1, 1));
             int tempo = int.Parse(dado.Substring(0, dado.Length-1));
             int multiplicador = 1;
